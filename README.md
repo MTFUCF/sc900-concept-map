@@ -129,6 +129,6 @@ Detailed checks live in [TESTING.md](./TESTING.md).
 ## Author
 
 **Matthew Faber**  
-Matthew Faber builds hands-on cybersecurity portfolio projects that turn study material into recruiter-friendly demos.
+Matthew Faber builds hands-on cybersecurity portfolio projects.
 
 
