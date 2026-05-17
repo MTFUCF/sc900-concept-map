@@ -36,7 +36,7 @@
       "type": "concept",
       "domains": ["Security", "Compliance"],
       "definition": "Cloud security is a shared model: Microsoft secures the platform, while customers still configure identities, data protection, devices, and governance correctly.",
-      "learnUrl": "https://learn.microsoft.com/en-us/security/benchmarks/shared-responsibility"
+      "learnUrl": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility"
     },
     {
       "id": "zero-trust",
@@ -164,7 +164,7 @@
       "type": "service",
       "domains": ["Identity", "Security"],
       "definition": "Entra ID Protection scores risky sign-ins and users so organizations can trigger MFA, password reset, or blocking based on identity risk.",
-      "learnUrl": "https://learn.microsoft.com/en-us/entra/identity-protection/"
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection"
     },
     {
       "id": "entra-permissions-management",
@@ -204,7 +204,7 @@
       "type": "service",
       "domains": ["Security", "Compliance"],
       "definition": "Defender for Cloud combines posture management and workload protection to identify configuration risk, threats, and compliance gaps across cloud resources.",
-      "learnUrl": "https://learn.microsoft.com/en-us/defender-cloud/"
+      "learnUrl": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
     },
     {
       "id": "defender-cloud-apps",
@@ -284,7 +284,7 @@
       "type": "service",
       "domains": ["Compliance"],
       "definition": "Microsoft Priva supports privacy workflows such as subject rights requests and privacy risk review for organizations managing regulated personal data.",
-      "learnUrl": "https://learn.microsoft.com/en-us/priva/"
+      "learnUrl": "https://learn.microsoft.com/en-us/privacy/priva/priva-overview"
     }
   ],
   "links": [
