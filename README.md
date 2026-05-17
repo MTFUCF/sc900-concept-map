@@ -1,4 +1,4 @@
-# SC-900 Concept Map Explorer
+﻿# SC-900 Concept Map Explorer
 
 An interactive static concept map that connects SC-900 security, identity, and compliance ideas to real Microsoft services.
 
@@ -17,7 +17,7 @@ This project is a buildless D3 application meant for GitHub Pages. Open it in a 
 
 ## Live demo
 
-https://matthewfaber.github.io/sc900-concept-map/
+https://mtfucf.github.io/sc900-concept-map/
 
 ## How to run locally
 
