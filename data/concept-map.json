@@ -1,0 +1,399 @@
+{
+  "metadata": {
+    "title": "SC-900 Concept Map Explorer",
+    "description": "Authored concept graph mapping SC-900 security, identity, and compliance ideas to Microsoft services.",
+    "sourceDataset": "projects/_content-drops/ms-security-products.json",
+    "sourceRepo": "https://github.com/matthewfaber/sc900-concept-map"
+  },
+  "nodes": [
+    {
+      "id": "security",
+      "name": "Security",
+      "type": "domain",
+      "domains": ["Security"],
+      "definition": "Security in SC-900 focuses on protecting identities, devices, workloads, and operations with layered controls that reduce risk and improve detection and response.",
+      "learnUrl": "https://learn.microsoft.com/en-us/security/"
+    },
+    {
+      "id": "identity",
+      "name": "Identity",
+      "type": "domain",
+      "domains": ["Identity"],
+      "definition": "Identity covers authentication, authorization, governance, and privileged access so the right people get the right access under the right conditions.",
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/fundamentals/"
+    },
+    {
+      "id": "compliance",
+      "name": "Compliance",
+      "type": "domain",
+      "domains": ["Compliance"],
+      "definition": "Compliance in SC-900 centers on understanding data, applying policy, meeting regulatory obligations, and proving control effectiveness during audits or investigations.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/purview"
+    },
+    {
+      "id": "shared-responsibility",
+      "name": "Shared Responsibility",
+      "type": "concept",
+      "domains": ["Security", "Compliance"],
+      "definition": "Cloud security is a shared model: Microsoft secures the platform, while customers still configure identities, data protection, devices, and governance correctly.",
+      "learnUrl": "https://learn.microsoft.com/en-us/security/benchmarks/shared-responsibility"
+    },
+    {
+      "id": "zero-trust",
+      "name": "Zero Trust",
+      "type": "concept",
+      "domains": ["Security", "Identity"],
+      "definition": "Zero Trust assumes breach and verifies every request explicitly using identity, device, workload, and data signals before granting or maintaining access.",
+      "learnUrl": "https://learn.microsoft.com/en-us/security/zero-trust/"
+    },
+    {
+      "id": "defense-in-depth",
+      "name": "Defense in Depth",
+      "type": "concept",
+      "domains": ["Security", "Identity", "Compliance"],
+      "definition": "Defense in Depth layers preventive, detective, and corrective controls so a single failure does not expose the full environment.",
+      "learnUrl": "https://learn.microsoft.com/en-us/security/zero-trust/deploy/overview"
+    },
+    {
+      "id": "cia-triad",
+      "name": "CIA Triad",
+      "type": "concept",
+      "domains": ["Security"],
+      "definition": "Confidentiality, integrity, and availability provide the baseline lens for judging whether a control protects data and systems in the right way.",
+      "learnUrl": "https://learn.microsoft.com/en-us/security/zero-trust/"
+    },
+    {
+      "id": "mfa",
+      "name": "MFA",
+      "type": "concept",
+      "domains": ["Identity", "Security"],
+      "definition": "Multifactor authentication strengthens sign-in by requiring more than a password, making stolen credentials much less useful to attackers.",
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-mfa-howitworks"
+    },
+    {
+      "id": "conditional-access",
+      "name": "Conditional Access",
+      "type": "concept",
+      "domains": ["Identity", "Security"],
+      "definition": "Conditional Access evaluates signals like user risk, device state, app, and location to allow, block, or step up access in real time.",
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview"
+    },
+    {
+      "id": "siem",
+      "name": "SIEM",
+      "type": "concept",
+      "domains": ["Security"],
+      "definition": "A SIEM centralizes log collection, correlation, and investigation so analysts can detect suspicious behavior across many systems.",
+      "learnUrl": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+    },
+    {
+      "id": "soar",
+      "name": "SOAR",
+      "type": "concept",
+      "domains": ["Security"],
+      "definition": "SOAR connects detections to automated playbooks so common response steps can run faster, more consistently, and at larger scale.",
+      "learnUrl": "https://learn.microsoft.com/en-us/azure/sentinel/automation/automate-responses-with-playbooks"
+    },
+    {
+      "id": "data-classification",
+      "name": "Data Classification",
+      "type": "concept",
+      "domains": ["Compliance", "Security"],
+      "definition": "Data classification labels and organizes information by sensitivity so the business can apply the right retention, access, and protection policies.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/data-map-classification"
+    },
+    {
+      "id": "dlp",
+      "name": "DLP",
+      "type": "concept",
+      "domains": ["Compliance", "Security"],
+      "definition": "Data loss prevention detects sensitive content and helps stop it from being shared, copied, or exfiltrated in ways that violate policy.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp"
+    },
+    {
+      "id": "encryption",
+      "name": "Encryption at rest / in transit",
+      "type": "concept",
+      "domains": ["Security", "Compliance"],
+      "definition": "Encryption protects data while it is stored and while it moves between systems, reducing exposure if storage or traffic is intercepted.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/information-protection"
+    },
+    {
+      "id": "compliance-manager-concept",
+      "name": "Compliance Manager",
+      "type": "concept",
+      "domains": ["Compliance"],
+      "definition": "Compliance Manager translates regulations into assessments and improvement actions so teams can track progress against multiple frameworks.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/compliance-manager"
+    },
+    {
+      "id": "ediscovery-concept",
+      "name": "eDiscovery",
+      "type": "concept",
+      "domains": ["Compliance"],
+      "definition": "eDiscovery preserves, searches, and exports content needed for litigation, investigations, and regulatory response across Microsoft 365 data.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/ediscovery"
+    },
+    {
+      "id": "privileged-access",
+      "name": "Privileged Access",
+      "type": "concept",
+      "domains": ["Identity", "Security"],
+      "definition": "Privileged access focuses on limiting who can perform high-impact actions, reducing standing access, and monitoring administrative activity closely.",
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/"
+    },
+    {
+      "id": "identity-governance",
+      "name": "Identity Governance",
+      "type": "concept",
+      "domains": ["Identity", "Compliance"],
+      "definition": "Identity governance manages lifecycle, access reviews, approvals, and entitlement visibility so access remains appropriate over time.",
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/id-governance/"
+    },
+    {
+      "id": "entra-id",
+      "name": "Microsoft Entra ID",
+      "type": "service",
+      "domains": ["Identity", "Security"],
+      "definition": "Microsoft Entra ID is the cloud identity foundation for users, groups, apps, and access policies across Microsoft 365, Azure, and connected apps.",
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/identity/"
+    },
+    {
+      "id": "entra-id-protection",
+      "name": "Microsoft Entra ID Protection",
+      "type": "service",
+      "domains": ["Identity", "Security"],
+      "definition": "Entra ID Protection scores risky sign-ins and users so organizations can trigger MFA, password reset, or blocking based on identity risk.",
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/identity-protection/"
+    },
+    {
+      "id": "entra-permissions-management",
+      "name": "Microsoft Entra Permissions Management",
+      "type": "service",
+      "domains": ["Identity", "Security"],
+      "definition": "Entra Permissions Management discovers and reduces excessive cloud permissions, helping teams move toward least privilege across Azure, AWS, and GCP.",
+      "learnUrl": "https://learn.microsoft.com/en-us/entra/permissions-management/"
+    },
+    {
+      "id": "intune",
+      "name": "Microsoft Intune",
+      "type": "service",
+      "domains": ["Security", "Identity"],
+      "definition": "Microsoft Intune manages device compliance, app protection, and endpoint configuration so access policies can trust device posture.",
+      "learnUrl": "https://learn.microsoft.com/en-us/mem/intune/"
+    },
+    {
+      "id": "defender-xdr",
+      "name": "Microsoft Defender XDR",
+      "type": "service",
+      "domains": ["Security"],
+      "definition": "Microsoft Defender XDR correlates signals across endpoint, identity, email, and cloud workloads to surface higher-fidelity incidents and automate response.",
+      "learnUrl": "https://learn.microsoft.com/en-us/defender-xdr/"
+    },
+    {
+      "id": "defender-endpoint",
+      "name": "Microsoft Defender for Endpoint",
+      "type": "service",
+      "domains": ["Security"],
+      "definition": "Defender for Endpoint provides endpoint protection, EDR, investigation, and vulnerability insights across desktop, server, and mobile platforms.",
+      "learnUrl": "https://learn.microsoft.com/en-us/defender-endpoint/"
+    },
+    {
+      "id": "defender-cloud",
+      "name": "Microsoft Defender for Cloud",
+      "type": "service",
+      "domains": ["Security", "Compliance"],
+      "definition": "Defender for Cloud combines posture management and workload protection to identify configuration risk, threats, and compliance gaps across cloud resources.",
+      "learnUrl": "https://learn.microsoft.com/en-us/defender-cloud/"
+    },
+    {
+      "id": "defender-cloud-apps",
+      "name": "Microsoft Defender for Cloud Apps",
+      "type": "service",
+      "domains": ["Security", "Compliance"],
+      "definition": "Defender for Cloud Apps adds SaaS visibility, session controls, and anomaly detection to reduce shadow IT and risky data movement in cloud apps.",
+      "learnUrl": "https://learn.microsoft.com/en-us/cloud-app-security/"
+    },
+    {
+      "id": "defender-identity",
+      "name": "Microsoft Defender for Identity",
+      "type": "service",
+      "domains": ["Security", "Identity"],
+      "definition": "Defender for Identity watches on-premises Active Directory behavior to detect credential theft, lateral movement, and identity-based attacks.",
+      "learnUrl": "https://learn.microsoft.com/en-us/defender-for-identity/"
+    },
+    {
+      "id": "sentinel",
+      "name": "Microsoft Sentinel",
+      "type": "service",
+      "domains": ["Security"],
+      "definition": "Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR platform for ingesting logs, correlating detections, and orchestrating response with playbooks.",
+      "learnUrl": "https://learn.microsoft.com/en-us/azure/sentinel/"
+    },
+    {
+      "id": "purview-data-governance",
+      "name": "Microsoft Purview Data Governance",
+      "type": "service",
+      "domains": ["Compliance"],
+      "definition": "Purview Data Governance discovers, catalogs, and classifies data assets so teams can understand lineage, ownership, and sensitivity across environments.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/purview"
+    },
+    {
+      "id": "purview-dlp",
+      "name": "Microsoft Purview Data Loss Prevention",
+      "type": "service",
+      "domains": ["Compliance", "Security"],
+      "definition": "Purview DLP applies policy across Microsoft 365 and endpoints to detect sensitive content and block, warn, or audit unsafe sharing actions.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp"
+    },
+    {
+      "id": "purview-information-protection",
+      "name": "Microsoft Purview Information Protection",
+      "type": "service",
+      "domains": ["Compliance", "Security"],
+      "definition": "Purview Information Protection uses sensitivity labels and encryption so protection persists with files and emails after they are shared.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/information-protection"
+    },
+    {
+      "id": "purview-insider-risk",
+      "name": "Microsoft Purview Insider Risk Management",
+      "type": "service",
+      "domains": ["Compliance", "Security"],
+      "definition": "Purview Insider Risk Management identifies patterns associated with risky user behavior and supports investigation with privacy-aware workflows.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/insider-risk-management"
+    },
+    {
+      "id": "purview-ediscovery",
+      "name": "Microsoft Purview eDiscovery",
+      "type": "service",
+      "domains": ["Compliance"],
+      "definition": "Purview eDiscovery helps legal and compliance teams place holds, search content, collect evidence, and export results for review.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/ediscovery"
+    },
+    {
+      "id": "purview-compliance-manager",
+      "name": "Microsoft Purview Compliance Manager",
+      "type": "service",
+      "domains": ["Compliance"],
+      "definition": "Purview Compliance Manager tracks assessment progress and control actions across frameworks such as GDPR, ISO 27001, and HIPAA.",
+      "learnUrl": "https://learn.microsoft.com/en-us/purview/compliance-manager"
+    },
+    {
+      "id": "priva",
+      "name": "Microsoft Priva",
+      "type": "service",
+      "domains": ["Compliance"],
+      "definition": "Microsoft Priva supports privacy workflows such as subject rights requests and privacy risk review for organizations managing regulated personal data.",
+      "learnUrl": "https://learn.microsoft.com/en-us/priva/"
+    }
+  ],
+  "links": [
+    { "source": "security", "target": "zero-trust", "relationship": "anchors" },
+    { "source": "security", "target": "defense-in-depth", "relationship": "anchors" },
+    { "source": "security", "target": "cia-triad", "relationship": "anchors" },
+    { "source": "security", "target": "siem", "relationship": "anchors" },
+    { "source": "security", "target": "soar", "relationship": "anchors" },
+    { "source": "security", "target": "defender-xdr", "relationship": "platform" },
+    { "source": "security", "target": "defender-endpoint", "relationship": "platform" },
+    { "source": "security", "target": "defender-cloud", "relationship": "platform" },
+    { "source": "security", "target": "defender-cloud-apps", "relationship": "platform" },
+    { "source": "security", "target": "defender-identity", "relationship": "platform" },
+    { "source": "security", "target": "sentinel", "relationship": "platform" },
+
+    { "source": "identity", "target": "mfa", "relationship": "anchors" },
+    { "source": "identity", "target": "conditional-access", "relationship": "anchors" },
+    { "source": "identity", "target": "privileged-access", "relationship": "anchors" },
+    { "source": "identity", "target": "identity-governance", "relationship": "anchors" },
+    { "source": "identity", "target": "entra-id", "relationship": "platform" },
+    { "source": "identity", "target": "entra-id-protection", "relationship": "platform" },
+    { "source": "identity", "target": "entra-permissions-management", "relationship": "platform" },
+    { "source": "identity", "target": "intune", "relationship": "platform" },
+    { "source": "identity", "target": "defender-identity", "relationship": "platform" },
+
+    { "source": "compliance", "target": "shared-responsibility", "relationship": "anchors" },
+    { "source": "compliance", "target": "data-classification", "relationship": "anchors" },
+    { "source": "compliance", "target": "dlp", "relationship": "anchors" },
+    { "source": "compliance", "target": "encryption", "relationship": "anchors" },
+    { "source": "compliance", "target": "compliance-manager-concept", "relationship": "anchors" },
+    { "source": "compliance", "target": "ediscovery-concept", "relationship": "anchors" },
+    { "source": "compliance", "target": "purview-data-governance", "relationship": "platform" },
+    { "source": "compliance", "target": "purview-dlp", "relationship": "platform" },
+    { "source": "compliance", "target": "purview-information-protection", "relationship": "platform" },
+    { "source": "compliance", "target": "purview-insider-risk", "relationship": "platform" },
+    { "source": "compliance", "target": "purview-ediscovery", "relationship": "platform" },
+    { "source": "compliance", "target": "purview-compliance-manager", "relationship": "platform" },
+    { "source": "compliance", "target": "priva", "relationship": "platform" },
+
+    { "source": "zero-trust", "target": "mfa", "relationship": "requires" },
+    { "source": "zero-trust", "target": "conditional-access", "relationship": "uses" },
+    { "source": "zero-trust", "target": "privileged-access", "relationship": "reduces risk" },
+    { "source": "zero-trust", "target": "entra-id", "relationship": "implemented with" },
+    { "source": "zero-trust", "target": "intune", "relationship": "uses device trust" },
+    { "source": "zero-trust", "target": "defender-xdr", "relationship": "benefits from signals" },
+
+    { "source": "shared-responsibility", "target": "defender-cloud", "relationship": "clarifies controls" },
+    { "source": "shared-responsibility", "target": "compliance-manager-concept", "relationship": "tracks customer actions" },
+    { "source": "shared-responsibility", "target": "zero-trust", "relationship": "informs strategy" },
+
+    { "source": "defense-in-depth", "target": "cia-triad", "relationship": "supports" },
+    { "source": "defense-in-depth", "target": "encryption", "relationship": "includes" },
+    { "source": "defense-in-depth", "target": "defender-endpoint", "relationship": "layer" },
+    { "source": "defense-in-depth", "target": "defender-cloud", "relationship": "layer" },
+    { "source": "defense-in-depth", "target": "defender-xdr", "relationship": "layer" },
+    { "source": "defense-in-depth", "target": "sentinel", "relationship": "layer" },
+
+    { "source": "mfa", "target": "entra-id", "relationship": "delivered by" },
+    { "source": "mfa", "target": "entra-id-protection", "relationship": "triggered by risk" },
+
+    { "source": "conditional-access", "target": "entra-id", "relationship": "policy engine" },
+    { "source": "conditional-access", "target": "entra-id-protection", "relationship": "risk signal" },
+    { "source": "conditional-access", "target": "intune", "relationship": "device compliance signal" },
+    { "source": "conditional-access", "target": "defender-cloud-apps", "relationship": "session control" },
+
+    { "source": "privileged-access", "target": "entra-permissions-management", "relationship": "least privilege" },
+    { "source": "privileged-access", "target": "defender-identity", "relationship": "monitoring" },
+    { "source": "privileged-access", "target": "entra-id", "relationship": "directory roles" },
+
+    { "source": "identity-governance", "target": "entra-id", "relationship": "lifecycle" },
+    { "source": "identity-governance", "target": "entra-permissions-management", "relationship": "entitlement visibility" },
+    { "source": "identity-governance", "target": "privileged-access", "relationship": "controls" },
+
+    { "source": "siem", "target": "sentinel", "relationship": "example service" },
+    { "source": "siem", "target": "defender-xdr", "relationship": "curated incident feed" },
+    { "source": "soar", "target": "sentinel", "relationship": "playbooks" },
+    { "source": "soar", "target": "defender-xdr", "relationship": "automated response" },
+    { "source": "siem", "target": "soar", "relationship": "often paired" },
+
+    { "source": "data-classification", "target": "purview-data-governance", "relationship": "catalogs" },
+    { "source": "data-classification", "target": "purview-information-protection", "relationship": "labels" },
+    { "source": "data-classification", "target": "priva", "relationship": "privacy context" },
+
+    { "source": "dlp", "target": "purview-dlp", "relationship": "enforced by" },
+    { "source": "dlp", "target": "purview-information-protection", "relationship": "paired control" },
+    { "source": "dlp", "target": "defender-cloud-apps", "relationship": "cloud app control" },
+    { "source": "dlp", "target": "intune", "relationship": "app protection scenario" },
+
+    { "source": "encryption", "target": "purview-information-protection", "relationship": "applies" },
+    { "source": "encryption", "target": "cia-triad", "relationship": "protects confidentiality" },
+    { "source": "encryption", "target": "defense-in-depth", "relationship": "layer" },
+
+    { "source": "compliance-manager-concept", "target": "purview-compliance-manager", "relationship": "implemented by" },
+    { "source": "compliance-manager-concept", "target": "defender-cloud", "relationship": "uses posture evidence" },
+
+    { "source": "ediscovery-concept", "target": "purview-ediscovery", "relationship": "implemented by" },
+    { "source": "ediscovery-concept", "target": "priva", "relationship": "privacy workflow overlap" },
+    { "source": "ediscovery-concept", "target": "data-classification", "relationship": "depends on metadata" },
+
+    { "source": "defender-xdr", "target": "defender-endpoint", "relationship": "ingests signals" },
+    { "source": "defender-xdr", "target": "defender-identity", "relationship": "ingests signals" },
+    { "source": "defender-xdr", "target": "defender-cloud-apps", "relationship": "ingests signals" },
+    { "source": "defender-xdr", "target": "sentinel", "relationship": "connects incidents" },
+    { "source": "defender-endpoint", "target": "intune", "relationship": "device posture" },
+    { "source": "defender-cloud", "target": "purview-compliance-manager", "relationship": "compliance assessments" },
+    { "source": "purview-dlp", "target": "purview-information-protection", "relationship": "often paired" },
+    { "source": "purview-dlp", "target": "purview-insider-risk", "relationship": "investigates alerts" },
+    { "source": "purview-dlp", "target": "defender-endpoint", "relationship": "endpoint DLP integration" },
+    { "source": "purview-information-protection", "target": "purview-ediscovery", "relationship": "label-aware review" },
+    { "source": "entra-id", "target": "defender-cloud-apps", "relationship": "session governance" }
+  ]
+}

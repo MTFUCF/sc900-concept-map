@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Interactive SC-900 concept map connecting Microsoft security, identity, and compliance concepts to real services."
+    />
+    <title>SC-900 Concept Map Explorer</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js" defer></script>
+    <script src="./src/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar card">
+        <div>
+          <p class="eyebrow">Project A2 · SC-900 Concept Map</p>
+          <h1>SC-900 Concept Map Explorer</h1>
+          <p class="subtitle">
+            Explore how core security, identity, and compliance ideas connect to Microsoft services such as
+            Entra ID, Defender XDR, Sentinel, Purview, Intune, and more.
+          </p>
+        </div>
+        <div class="topbar-actions">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        </div>
+      </header>
+
+      <section class="controls card" aria-label="Graph controls">
+        <label class="search-control" for="node-search">
+          <span>Search concepts and services</span>
+          <input id="node-search" type="search" placeholder="Try Entra ID, DLP, Sentinel..." />
+        </label>
+
+        <div class="filter-group" aria-label="Domain filters">
+          <span>Filter domains</span>
+          <div class="chip-row">
+            <button class="chip is-active" type="button" data-domain="Security" aria-pressed="true">Security</button>
+            <button class="chip is-active" type="button" data-domain="Identity" aria-pressed="true">Identity</button>
+            <button class="chip is-active" type="button" data-domain="Compliance" aria-pressed="true">Compliance</button>
+          </div>
+        </div>
+
+        <div class="action-group" aria-label="Layout actions">
+          <span>Layout tools</span>
+          <div class="action-row">
+            <button id="pin-toggle" type="button" aria-pressed="false">Pin mode off</button>
+            <button id="reset-layout" type="button">Reset layout</button>
+          </div>
+        </div>
+      </section>
+
+      <main class="layout">
+        <section class="graph-panel card" aria-label="Concept map graph">
+          <div class="graph-header">
+            <div class="legend-block">
+              <p class="legend-heading">Legend by node type</p>
+              <div class="legend" aria-label="Graph legend">
+                <span class="legend-item"><span class="legend-swatch domain"></span>Domain</span>
+                <span class="legend-item"><span class="legend-swatch concept"></span>Concept</span>
+                <span class="legend-item"><span class="legend-swatch service"></span>Microsoft service</span>
+              </div>
+            </div>
+            <p class="status-text" id="status-text">Loading graph…</p>
+          </div>
+
+          <div class="graph-canvas" id="graph">
+            <svg id="graph-svg" aria-label="Interactive force-directed graph"></svg>
+          </div>
+
+          <div class="source-strip">
+            <span>Visible citations</span>
+            <a href="https://learn.microsoft.com/en-us/security/zero-trust/" target="_blank" rel="noreferrer">Zero Trust</a>
+            <a href="https://learn.microsoft.com/en-us/entra/identity/" target="_blank" rel="noreferrer">Entra ID</a>
+            <a href="https://learn.microsoft.com/en-us/defender-xdr/" target="_blank" rel="noreferrer">Defender XDR</a>
+            <a href="https://learn.microsoft.com/en-us/azure/sentinel/" target="_blank" rel="noreferrer">Sentinel</a>
+            <a href="https://learn.microsoft.com/en-us/purview/purview" target="_blank" rel="noreferrer">Purview</a>
+            <p class="source-note">Definitions and service nodes were authored from <code>projects/_content-drops/ms-security-products.json</code> plus Microsoft Learn references.</p>
+          </div>
+        </section>
+
+        <aside class="sidebar card" id="detail-panel" aria-live="polite"></aside>
+      </main>
+
+      <footer class="footer">
+        Built by Matthew Faber ·
+        <a href="https://github.com/matthewfaber/sc900-concept-map" target="_blank" rel="noreferrer">source</a>
+      </footer>
+    </div>
+  </body>
+</html>
