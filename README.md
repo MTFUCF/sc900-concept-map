@@ -4,7 +4,7 @@ An interactive static concept map that connects SC-900 security, identity, and c
 
 ## What it is
 
-This project is a buildless D3 application meant for GitHub Pages and recruiter-friendly repo review. Open it in a browser and explore how concepts like Zero Trust, Conditional Access, DLP, eDiscovery, SIEM, and Identity Governance relate to Microsoft Entra, Defender, Sentinel, Purview, Intune, and supporting services.
+This project is a buildless D3 application meant for GitHub Pages. Open it in a browser and explore how concepts like Zero Trust, Conditional Access, DLP, eDiscovery, SIEM, and Identity Governance relate to Microsoft Entra, Defender, Sentinel, Purview, Intune, and supporting services.
 
 ## Feature highlights
 
@@ -129,6 +129,10 @@ Detailed checks live in [TESTING.md](./TESTING.md).
 ## Author
 
 **Matthew Faber**  
+<<<<<<< Updated upstream
 Matthew Faber builds hands-on cybersecurity portfolio projects.
+=======
+Matthew Faber builds hands-on cybersecurity portfolio projects that turn study material into practical demos.
+>>>>>>> Stashed changes
 
 

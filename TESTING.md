@@ -30,4 +30,4 @@ Baseline date: **2026-05-16**
 - [ ] Graph copy continues to keep Entra, Defender, Sentinel, Purview, and compliance concepts distinct.
 - [ ] Search, filtering, and sidebar detail remain more prominent than decorative motion.
 - [ ] `data/concept-map.json` stays human-readable for future review and edits.
-- [ ] The repo remains understandable to a recruiter opening it for the first time.
+- [ ] The repo remains understandable when opening it for the first time.
